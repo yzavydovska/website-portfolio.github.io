@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Hourly Rate Calculator</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>FULL-STACK</strong> developer</a>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">About me</a></li>
+                    <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Skills</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
+                    <li class="nav-list__item"><a href="./calculator.html" class="nav-list__link nav-list__link--active">Calculator</a></li>
+                    <li class="nav-list__item"><a href="./CV (5).pdf" class="nav-list__link" target="_blank">View CV</a></li>
+
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+    <main class="section">
+        <div class="container">
+            <h1 class="title-1">Hourly Rate Calculator</h1>
+            <div id="calculator" class="calculator">
+               
+                
+                <label for="graficzne">Hours for Graphic Services(20$/h):</label>
+                <input type="number" id="graficzne" placeholder="Number of hours">
+              
+                <label for="zarzadcze">Hours for Managerial Services(10$/h):</label>
+                <input type="number" id="zarzadcze" placeholder="Number of hours">
+              
+                <label for="programistyczne">Hours for Programming Services(35$/h):</label>
+                <input type="number" id="programistyczne" placeholder="Number of hours">
+              
+                <button onclick="calculate()">Calculate</button>
+              
+                <div id="result">Total: $0.00</div> 
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://github.com/yzavydovska" target="_blank"><img src="./image/icons/gitHub.svg" alt="GitHub"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/yuliia-zavydovska-18a234262" target="_blank"><img src="./image/icons/linkedIn.svg" alt="LinkedIn"></a></li>
+                 </ul>
+                <div class="copyright">
+                    <p>© 2024 fullstack-dev.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+   
+</body>
+
+</html>

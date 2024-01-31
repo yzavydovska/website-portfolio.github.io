@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-stack developer</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+  
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>FULL-STACK</strong> developer</a>
+              
+                <ul class="nav-list">
+                    
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link ">About me</a></li>
+                    <li class="nav-list__item"><a href="./skills.html" class="nav-list__link nav-list__link--active">Skills</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
+                    <li class="nav-list__item"><a href="./calculator.html" class="nav-list__link">Calculator</a></li>
+                    <li class="nav-list__item"><a href="./CV (5).pdf" class="nav-list__link" target="_blank">View CV</a></li>
+               
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="title-1">Skills</h1>
+
+
+            <ul class="content-list">
+                <li class="content-list__item">
+                    <h2 class="title-2">Hard skills</h2>
+                    <div class="slider-container">
+                        <div class="slider-controls">
+                            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                        </div>
+                        <ul class="hard-skills-list slider">
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/ISO_C++_Logo.svg.png" alt="C++"></li>
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/vs4.png" alt="Visual Studio"></li>
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/Unity_Logo.png" alt="Unity"></li>
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/3ds-max-logo-9B624BE04F-seeklogo.com.png" alt="3ds Max"></li>
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/postgresql_logo-555px.webp" alt="PostgreSQL"></li>
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/pngaaa.com-3850393.png" alt="Zbrush"></li>
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/blender.png" alt="Blender"></li>
+                            <li class="hard-skills-list__item mySlides"><img src="./image/logos/csharp.png" alt="C#"></li>
+                        </ul>
+                </li>
+                <li class="content-list__item">
+                    <h2 class="title-2">Soft skills</h2>
+                    <p>communication skills, teamwork, responsibility, project management, analytical thinking, adaptability, creativity, leadership, time management, conflict resolution, emotional intelligence, networking, critical thinking, decision making, negotiation skills, empathy, interpersonal skills, stress management</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://github.com/yzavydovska" target="_blank"><img src="./image/icons/gitHub.svg" alt="GitHub"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/yuliia-zavydovska-18a234262" target="_blank"><img src="./image/icons/linkedIn.svg" alt="LinkedIn"></a></li>                    
+                </ul>
+                <div class="copyright">
+                    <p>© 2024 fullstack-dev.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+   var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length};
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+</script>
+
+
+
+
+ 
+</body>
+</html>

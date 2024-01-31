@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-stack developer</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>FULL-STACK</strong> developer</a>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link ">About me</a></li>
+                    <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Skills</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link nav-list__link--active">Contacts</a></li>
+                    <li class="nav-list__item"><a href="./calculator.html" class="nav-list__link">Calculator</a></li>
+                    <li class="nav-list__item"><a href="./CV (5).pdf" class="nav-list__link" target="_blank">View CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+
+    <h1 class="title-1">Contacts</h1>
+    <form id="contact-form" method="post" action="contact.php">
+    <label for="name">Name<span>*</span>:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email<span>*</span>:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message<span>*</span>:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+                
+            <ul class="content-list">
+                <li class="content-list__item">
+                <h2 class="title-2">Location</h2>
+             <p>Poznan, Poland</p>
+
+                </li>
+                <li class="content-list__item">
+            <h2 class="title-2">Telegram</h2>
+            <p>+48 792 248 911</p>
+
+                </li>
+
+            </li>
+            <li class="content-list__item">
+        <h2 class="title-2">Email</h2>
+        <p>yuliia.zavydovska@gmail.com</p>
+
+            </li>
+            </ul>
+                <ul class="social">
+                    <li class="social__item"><a href="https://github.com/yzavydovska" target="_blank"><img src="./image/icons/gitHub.svg" alt="GitHub"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/yuliia-zavydovska-18a234262" target="_blank"><img src="./image/icons/linkedIn.svg" alt="LinkedIn"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2024 fullstack-dev.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section>
+    <?php include('contact.php'); ?>
+    </section>
+</body>
+</html>
